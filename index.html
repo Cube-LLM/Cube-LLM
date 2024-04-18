@@ -72,14 +72,14 @@
 </section>
 
 <section class="seciton">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
-
-        <!-- Visual Effects. -->
         <div class="column">
           <div class="content">
-            <h2 class="title is-3">Visual Chain-of-Thought Prompting</h2>
+            <div class="column is-one-fifths">
+            <h2 class="title is-3">Visual CoT Prompting</h2>
             <p>
-              Just like LLM, <b>Cube-LLM</b> improves its prediction by chaining multiple reasoning steps together from 2D to 3D.
+              Just like LLM, <b>Cube-LLM</b> improves its prediction by chain-of-thought prompting (CoT), connecting similar reasoning steps together from 2D to 3D bounding boxes.
             </p>
             <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/vcot.mp4"
@@ -87,64 +87,32 @@
             </video>
           </div>
         </div>
-        <!--/ Visual Effects. -->
-  
-        <!-- Matting. -->
+        </div>
+
         <div class="column">
+          <div class="column is-one-fifths">
           <h2 class="title is-3">Specialist Model Prompting</h2>
           <div class="columns is-centered">
             <div class="column content">
               <p>
-                <b>Cube-LLM</b> can further improve its predictions by incorporating specialist models of any modalities. 
+                <b>Cube-LLM</b> can further improve its predictions by incorporating specialist models of any modalities. <b>Cube-LLM</b> simply takes their predictions as additional prompt.
               </p>
               <video id="matting-video" autoplay controls muted loop playsinline height="100%">
                 <source src="./static/videos/expert_prompting.mp4"
                         type="video/mp4">
               </video>
-            </div>
-  
+          </div>
+          </div>
+          </div>
           </div>
         </div>
 </section>
 
-<!-- <section class="section">
-  <div class="container is-max-desktop"> -->
-    <!-- Abstract. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Recent success in multi-modal large language models (MLLMs) has demonstrated incredible capabilities in a variety of language and 2D vision tasks through large-scale pre-training. 
-            We aim to extend MLLMs' capabilities to complex 3D reasoning in the context of AV applications. 
-            To that end, we first develop a large-scale 3D vision-language QA dataset LV3D by amalgamating multiple 2D and 3D datasets and formulating the data as multi-turn question-answer pairs. 
-            Also, we introduce a new MLLM named <b>Cube-LLM</b> and pre-train it on LV3D. 
-            </p>
-            <p>
-            Recognizing the complexity of direct 3D reasoning from 2D image data, <b>Cube-LLM</b> utilizes chain-of-thought (CoT) reasoning to fascilitate 3D understanding from 2D c ontext information. 
-            To further enhance its performance, <b>Cube-LLM</b> incorporates predictions from specialist models and employs an iterative approach to progressively increase input resolution during training, enabling effective reasoning for objects at a distance.
-            Our experiments demonstrate that <b>Cube-LLM</b> significantly outperforms existing baselines by 14.8% of BEV AP on the Talk2Car dataset for 3D grounded reasoning and 21.6% of score on the DriveLM dataset for complex reasoning, respectively.
-          </p>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Abstract. -->
-    <!-- Overview image. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">More Visualization</h2>
-        <div class="content has-text-justified">
-      </div>
-    </div>
-  </div> -->
-    <!-- </div>
-  </div>
-</div>
-</div>
-</section> -->
+</section> 
+<div class="container is-max-desktop">
+<div class="column is-one-fifths">
 <h2 class="title is-3" >Outdoor Visualization</h2>
 <section class="hero is-large has-carousel">
-    <div class="column is-four-fifths">
     <div id="carousel-demo" class="hero-carousel">
       <div class="item-1">
         <!-- Slide Content -->
@@ -181,16 +149,17 @@
       <div class="item-9">
         <!-- Slide Content -->
         <img src="./static/images/outdoor10.png">
-      </div>
+    </div>
     </div>
     <div class="hero-head"></div>
     <div class="hero-body"></div>
     <div class="hero-foot"></div>
+  </div>
 </div>
 </section>
+<div class="column is-one-fifths">
 <h2 class="title is-3" >Indoor Visualization</h2>
 <section class="hero is-large has-carousel">
-    <div class="column is-four-fifths">
     <div id="carousel-demo" class="hero-carousel">
       <div class="item-1">
         <!-- Slide Content -->
@@ -224,6 +193,7 @@
     <div class="hero-head"></div>
     <div class="hero-body"></div>
     <div class="hero-foot"></div>
+  </div>
 </div>
 </section>
   <!-- End Hero Carousel -->
